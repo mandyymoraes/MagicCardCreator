@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="500.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetomagic.magiccardcreator.HomeController">
+   <children>
+      <ImageView fitHeight="808.0" fitWidth="1207.0">
+         <image>
+            <Image url="@assets/sky.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-2.0" opacity="0.4" prefHeight="100.0" prefWidth="1207.0" style="-fx-background-color: #333333;" />
+      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="1.0" layoutY="-9.0" AnchorPane.leftAnchor="18.0">
+         <image>
+            <Image url="@assets/magic_logo_branca.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f6f2ef" layoutX="462.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRIE SUA CARTA">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Text>
+      <Pane layoutX="208.0" layoutY="246.0" prefHeight="500.0" prefWidth="350.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="416.0" layoutX="-108.0" layoutY="-372.0" y="270.0">
+               <image>
+                  <Image url="@assets/card_mockup.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nomeCarta" alignment="BASELINE_RIGHT" layoutX="-73.0" layoutY="-73.0" prefHeight="25.0" prefWidth="350.0" promptText="Batalha de Beirágua" style="-fx-background-color: #F6F6F0; -fx-border-radius: 20;" />
+            <Text layoutX="-63.0" layoutY="-56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome da Carta:">
+               <font>
+                  <Font name="Gabarito Regular" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="-58.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feitiço">
+               <font>
+                  <Font name="Gabarito Regular" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="-58.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição da Carta:">
+               <font>
+                  <Font name="Gabarito Regular" size="15.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="descricaoCarta" layoutX="-58.0" layoutY="259.0" prefHeight="77.0" prefWidth="319.0" promptText="Destrua todas as criaturas com poder 3 ou maior. Depois crie um token de comida para cada criatura que você controla." style="-fx-border-radius: 20;" />
+            <TextField fx:id="autorCarta" layoutX="-78.0" layoutY="355.0" prefHeight="25.0" prefWidth="248.0" promptText="Autor: Thomas Duchek" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="310.0" fitWidth="450.0" layoutX="612.0" layoutY="144.0">
+         <image>
+            <Image url="@assets/input_background.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="651.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faça uma descrição para ser gerada a imagem da sua carta:" wrappingWidth="266.59503173828125">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="descricaoImagem" layoutX="650.0" layoutY="229.0" prefHeight="139.0" prefWidth="360.0" promptText="&quot;Atraxa, Praetors' Voice&quot; de Magic: The Gathering mistura traços angelicais e demoníacos em uma figura imponente, com armadura e quatro asas - duas angelicais radiantes e duas demoníacas escuras. Segurando uma lança poderosa, destaca-se em um cenário de céu tempestuoso e terreno arruinado, sua presença mágica realçada por contrastes de luz e sombra, enfatizando sua transcendência." style="-fx-border-radius: 20;" />
+      <Text layoutX="652.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nosso aplicativo vai levar sua descrição para um software de geração de imagens para que seja construída a imagem da sua carta" wrappingWidth="360.0">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="211.0" fitWidth="450.0" layoutX="612.0" layoutY="434.0">
+         <image>
+            <Image url="@assets/input_background.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="671.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custo da carta:" wrappingWidth="266.59503173828125">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="651.0" layoutY="493.0">
+         <image>
+            <Image url="@assets/colorless_mana.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="740.0" layoutY="493.0">
+         <image>
+            <Image url="@assets/red_mana.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="829.0" layoutY="493.0">
+         <image>
+            <Image url="@assets/blue_mana.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="918.0" layoutY="491.0">
+         <image>
+            <Image url="@assets/yellow_mana.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="785.0" layoutY="536.0">
+         <image>
+            <Image url="@assets/green_mana.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="manaIncolor" alignment="CENTER" layoutX="687.0" layoutY="495.0" prefHeight="25.0" prefWidth="35.0" text="2">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="manaVermelha" alignment="CENTER" layoutX="776.0" layoutY="495.0" prefHeight="25.0" prefWidth="35.0" text="2">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="manaAzul" alignment="CENTER" layoutX="865.0" layoutY="495.0" prefHeight="25.0" prefWidth="35.0" text="2">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="manaBranca" alignment="CENTER" layoutX="956.0" layoutY="495.0" prefHeight="25.0" prefWidth="35.0" text="2">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="manaVerde" alignment="CENTER" layoutX="823.0" layoutY="538.0" prefHeight="25.0" prefWidth="35.0" text="2">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="gerarCarta" alignment="CENTER" layoutX="710.0" layoutY="581.0" mnemonicParsing="false" onAction="#capturarDados" style="-fx-background-color: #e42f1a;" text="GERAR CARTA" textFill="#f6f2ef">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Gabarito Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cartaFinalizada" alignment="CENTER" layoutX="892.0" layoutY="581.0" mnemonicParsing="false" onAction="#abrirModalFeiticoFinalizada" style="-fx-background-color: #e42f1a;" text="FINALIZADA" textFill="#f6f2ef">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Gabarito Medium" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
