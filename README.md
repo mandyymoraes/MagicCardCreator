@@ -61,3 +61,7 @@ ela possa ser colocada como um PNG dentro do layout final.
 Assim para a finalização do programa, se é criado um documento Word via Apache POI e tirado um print da tela, por meio de um método, para que a carta finalizada possa ser inserida
 no documento e posteriomente ser feito automaticamente o download dele no dispositivo do usuário e a carta personalizada possa ser viabilizada. 
 
+## Preview
+
+<center><img src="preview_magic_card_creator.gif"></img><center>
+
