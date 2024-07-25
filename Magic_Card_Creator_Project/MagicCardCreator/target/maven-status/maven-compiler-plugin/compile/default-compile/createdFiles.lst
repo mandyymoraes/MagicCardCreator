@@ -1,0 +1,9 @@
+projetomagic\magiccardcreator\ExtractURL.class
+module-info.class
+projetomagic\magiccardcreator\HomeController.class
+projetomagic\magiccardcreator\DadosCarta.class
+projetomagic\magiccardcreator\GerarImagem.class
+projetomagic\magiccardcreator\TirarPrint.class
+projetomagic\magiccardcreator\CriarWordsCarta.class
+projetomagic\magiccardcreator\RepositorioCartasCriadas.class
+projetomagic\magiccardcreator\App.class
